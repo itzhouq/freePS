@@ -7,9 +7,9 @@ FreePS operates directly in the browser. You can create images, paste from the c
 
 ## Preview
 
-https://geeeeeeeek.github.io/freePS/
+https://itzhouq.github.io/freePS/
 
-https://zaixianps.net/ (中文版)
+https://os.itzhouq.cn
 
 
 ## Browser Support
