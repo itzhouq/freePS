@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>FreePS - Free Online Photoshop Alternative | Image Editor</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="x-ua-compatible" content="IE=edge" />
+	<meta name="description" content="FreePS is a free online photo editor. Edit images, add filters, resize, crop, and add text directly in your browser. No download required, completely free with layers support." />
+	<meta name="keywords" content="online photo editor, free photoshop, image editor, photo editing, online image editor, free image editor, layers, filters, resize image, crop image, add text to photo, 在线图片编辑器, 免费在线修图, 在线PS" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5.0, user-scalable=yes" />
+	<link rel="icon" sizes="192x192" href="images/favicon.png">
+
+	<!-- Preload critical images -->
+	<link rel="preload" as="image" href="images/favicon.png">
+
+	<!-- Canonical URL - UPDATE THIS AFTER DEPLOYMENT -->
+	<link rel="canonical" href="https://ps.itzhouq.cn/">
+
+	<!-- Hreflang for bilingual support -->
+	<link rel="alternate" hreflang="en" href="https://ps.itzhouq.cn/" />
+	<link rel="alternate" hreflang="zh" href="https://ps.itzhouq.cn/?lang=zh" />
+	<link rel="alternate" hreflang="x-default" href="https://ps.itzhouq.cn/" />
+
+	<!-- Open Graph -->
+	<meta property="og:title" content="FreePS - Free Online Photo Editor | Edit Images in Browser" />
+	<meta property="og:description" content="Free online photo editor with layers, filters, and professional tools. No download required, edit images directly in your browser." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://ps.itzhouq.cn/" />
+	<meta property="og:image" content="https://ps.itzhouq.cn/images/preview.jpg" />
+	<meta property="og:site_name" content="FreePS" />
+	<meta property="og:locale" content="en_US" />
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="FreePS - Free Online Photo Editor" />
+	<meta name="twitter:description" content="Free online photo editor with layers, filters, and professional tools. No download required." />
+	<meta name="twitter:image" content="https://ps.itzhouq.cn/images/preview.jpg" />
+
+	<!-- Schema.org Structured Data -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "SoftwareApplication",
+		"name": "FreePS",
+		"applicationCategory": "DesignApplication",
+		"operatingSystem": "Web Browser",
+		"offers": {
+			"@type": "Offer",
+			"price": "0",
+			"priceCurrency": "USD"
+		},
+		"aggregateRating": {
+			"@type": "AggregateRating",
+			"ratingValue": "4.5",
+			"ratingCount": "1000"
+		},
+		"description": "Free online photo editor with layers, filters, resize, crop, text tools and more. Edit images directly in your browser without download."
+	}
+	</script>
+
+	<script src="dist/bundle.js" defer></script>
+	<style>
+		.lang-switch { display: inline-block; margin-left: 15px; font-size: 14px; }
+		.lang-switch a { color: #333; text-decoration: none; margin: 0 3px; }
+		.lang-switch a:hover { text-decoration: underline; }
+	</style>
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<nav aria-label="Main Menu" class="main_menu" id="main_menu"></nav>
+
+		<div class="submenu">
+			<a class="logo" href="#">FreePS</a>
+			<div class="lang-switch">
+				<a href="?lang=en">EN</a> | <a href="?lang=zh">中文</a>
+			</div>
+			<div class="block attributes" id="action_attributes"></div>
+			<button class="undo_button" id="undo_button" type="button">
+				<span class="sr_only">Undo</span>
+			</button>
+		</div>
+
+		<div class="sidebar_left" id="tools_container"></div>
+
+
+		<div class="middle_area" id="middle_area">
+
+			<canvas class="ruler_left" id="ruler_left"></canvas>
+			<canvas class="ruler_top" id="ruler_top"></canvas>
+
+			<div class="main_wrapper" id="main_wrapper">
+				<div class="canvas_wrapper" id="canvas_wrapper">
+					<div id="mouse"></div>
+					<div class="transparent-grid" id="canvas_minipaint_background"></div>
+					<canvas id="canvas_minipaint">
+						<div class="trn error">
+							Your browser does not support canvas or JavaScript is not enabled.
+						</div>
+					</canvas>
+				</div>
+			</div>
+		</div>
+
+		<div class="sidebar_right">
+			<div class="preview block">
+				<h2 class="trn toggle" data-target="toggle_preview">Preview</h2>
+				<div id="toggle_preview"></div>
+			</div>
+
+			<div class="colors block">
+				<h2 class="trn toggle" data-target="toggle_colors">Colors</h2>
+				<div class="content" id="toggle_colors"></div>
+			</div>
+
+			<div class="block" id="info_base">
+				<h2 class="trn toggle toggle-full" data-target="toggle_info">Information</h2>
+				<div class="content" id="toggle_info"></div>
+			</div>
+
+			<div class="details block" id="details_base">
+				<h2 class="trn toggle toggle-full" data-target="toggle_details">Layer details</h2>
+				<div class="content details-content" id="toggle_details"></div>
+			</div>
+
+			<div class="layers block">
+				<h2 class="trn">Layers</h2>
+				<div class="content" id="layers_base"></div>
+			</div>
+		</div>
+	</div>
+	<div class="mobile_menu">
+		<button class="left_mobile_menu" id="left_mobile_menu_button" type="button">
+			<span class="sr_only">Toggle Menu</span>
+		</button>
+		<button class="right_mobile_menu" id="mobile_menu_button" type="button">
+			<span class="sr_only">Toggle Menu</span>
+		</button>
+	</div>
+	<div class="hidden" id="tmp"></div>
+	<div id="popups"></div>
+</body>
+
+</html>

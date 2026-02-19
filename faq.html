@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FAQ - FreePS Online Photo Editor</title>
+	<meta name="description" content="Frequently asked questions about FreePS online photo editor. Learn how to use features, privacy policy, and more.">
+	<link rel="canonical" href="https://ps.itzhouq.cn/faq.html">
+	<link rel="alternate" hreflang="en" href="https://ps.itzhouq.cn/faq.html" />
+	<link rel="alternate" hreflang="zh" href="https://ps.itzhouq.cn/faq.html?lang=zh" />
+	<style>
+		body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
+		h1 { color: #333; }
+		a.back-link { display: inline-block; margin-bottom: 20px; color: #0066cc; text-decoration: none; }
+		.lang-switch { float: right; }
+		details { margin: 15px 0; border: 1px solid #ddd; border-radius: 5px; padding: 10px; }
+		summary { cursor: pointer; font-weight: bold; color: #0066cc; }
+		summary:hover { text-decoration: underline; }
+	</style>
+</head>
+<body>
+	<div class="lang-switch">
+		<a href="?lang=en">EN</a> | <a href="?lang=zh">中文</a>
+	</div>
+	<a href="/" class="back-link">← Back to Editor</a>
+
+	<h1 data-en="Frequently Asked Questions" data-zh="常见问题">Frequently Asked Questions</h1>
+
+	<details>
+		<summary data-en="Is FreePS really free?" data-zh="FreePS 真的免费吗？">Is FreePS really free?</summary>
+		<p data-en="Yes, FreePS is 100% free with no hidden costs, subscriptions, or premium features. All tools are available to everyone." data-zh="是的，FreePS 完全免费，没有隐藏费用、订阅或高级功能。所有工具都对所有人开放。">
+			Yes, FreePS is 100% free with no hidden costs, subscriptions, or premium features. All tools are available to everyone.
+		</p>
+	</details>
+
+	<details>
+		<summary data-en="Do I need to create an account?" data-zh="我需要创建账户吗？">Do I need to create an account?</summary>
+		<p data-en="No account required! Just visit the website and start editing immediately." data-zh="不需要账户！只需访问网站即可立即开始编辑。">
+			No account required! Just visit the website and start editing immediately.
+		</p>
+	</details>
+
+	<details>
+		<summary data-en="Is my data private?" data-zh="我的数据隐私吗？">Is my data private?</summary>
+		<p data-en="Absolutely. All image processing happens in your browser. Your images are never uploaded to our servers." data-zh="绝对隐私。所有图片处理都在您的浏览器中进行。您的图片永远不会上传到我们的服务器。">
+			Absolutely. All image processing happens in your browser. Your images are never uploaded to our servers.
+		</p>
+	</details>
+
+	<details>
+		<summary data-en="What image formats are supported?" data-zh="支持哪些图片格式？">What image formats are supported?</summary>
+		<p data-en="FreePS supports all major image formats including JPG, PNG, WEBP, GIF, BMP, and more." data-zh="FreePS 支持所有主流图片格式，包括 JPG、PNG、WEBP、GIF、BMP 等。">
+			FreePS supports all major image formats including JPG, PNG, WEBP, GIF, BMP, and more.
+		</p>
+	</details>
+
+	<details>
+		<summary data-en="Can I use FreePS on mobile?" data-zh="我可以在移动设备上使用 FreePS 吗？">Can I use FreePS on mobile?</summary>
+		<p data-en="Yes! FreePS works on any device with a modern web browser, including smartphones and tablets." data-zh="可以！FreePS 可在任何具有现代浏览器的设备上使用，包括智能手机和平板电脑。">
+			Yes! FreePS works on any device with a modern web browser, including smartphones and tablets.
+		</p>
+	</details>
+
+	<details>
+		<summary data-en="How do I save my edited image?" data-zh="如何保存编辑后的图片？">How do I save my edited image?</summary>
+		<p data-en="Click File > Save or use the download button. You can save as PNG, JPG, or WEBP formats." data-zh="点击文件 > 保存或使用下载按钮。您可以保存为 PNG、JPG 或 WEBP 格式。">
+			Click File > Save or use the download button. You can save as PNG, JPG, or WEBP formats.
+		</p>
+	</details>
+
+	<details>
+		<summary data-en="Does FreePS support layers?" data-zh="FreePS 支持图层吗？">Does FreePS support layers?</summary>
+		<p data-en="Yes, FreePS has full layer support. You can add, delete, hide, reorder, and blend layers just like in professional photo editors." data-zh="是的，FreePS 完全支持图层。您可以添加、删除、隐藏、重新排序和混合图层，就像专业图片编辑器一样。">
+			Yes, FreePS has full layer support. You can add, delete, hide, reorder, and blend layers just like in professional photo editors.
+		</p>
+	</details>
+
+	<script>
+		const lang = new URLSearchParams(window.location.search).get('lang') || 'en';
+		document.querySelectorAll('[data-' + lang + ']').forEach(el => {
+			el.innerHTML = el.getAttribute('data-' + lang);
+		});
+	</script>
+</body>
+</html>

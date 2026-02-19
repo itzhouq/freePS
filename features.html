@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Features - FreePS Online Photo Editor</title>
+	<meta name="description" content="Explore all features of FreePS online photo editor: layers, filters, brushes, text tools, resize, crop, and more. Professional editing tools for free.">
+	<meta name="keywords" content="online photo editor features, image filters, photo layers, resize image online, crop image">
+	<link rel="canonical" href="https://ps.itzhouq.cn/features.html">
+	<link rel="alternate" hreflang="en" href="https://ps.itzhouq.cn/features.html" />
+	<link rel="alternate" hreflang="zh" href="https://ps.itzhouq.cn/features.html?lang=zh" />
+	<style>
+		body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; max-width: 900px; margin: 0 auto; padding: 20px; }
+		h1 { color: #333; }
+		a.back-link { display: inline-block; margin-bottom: 20px; color: #0066cc; text-decoration: none; }
+		.lang-switch { float: right; }
+		.feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px; }
+		.feature-card { border: 1px solid #ddd; border-radius: 8px; padding: 20px; }
+		.feature-card h3 { color: #0066cc; margin-top: 0; }
+	</style>
+</head>
+<body>
+	<div class="lang-switch">
+		<a href="?lang=en">EN</a> | <a href="?lang=zh">中文</a>
+	</div>
+	<a href="/" class="back-link">← Back to Editor</a>
+
+	<h1 data-en="FreePS Features" data-zh="FreePS 功能特点">FreePS Features</h1>
+
+	<p data-en="Discover all the powerful features available in FreePS online photo editor." data-zh="探索 FreePS 在线图片编辑器的所有强大功能。">
+		Discover all the powerful features available in FreePS online photo editor.
+	</p>
+
+	<div class="feature-grid">
+		<div class="feature-card">
+			<h3 data-en="Layers" data-zh="图层">Layers</h3>
+			<p data-en="Work with multiple layers to create complex compositions. Add, delete, merge, and reorder layers with ease." data-zh="使用多个图层创建复杂的合成作品。轻松添加、删除、合并和重新排序图层。">
+				Work with multiple layers to create complex compositions. Add, delete, merge, and reorder layers with ease.
+			</p>
+		</div>
+
+		<div class="feature-card">
+			<h3 data-en="Filters & Effects" data-zh="滤镜和特效">Filters & Effects</h3>
+			<p data-en="Choose from 60+ filters including blur, sharpen, noise, bulge/pinch, and many more artistic effects." data-zh="从 60+ 滤镜中选择，包括模糊、锐化、噪点、凸起/收缩等多种艺术效果。">
+				Choose from 60+ filters including blur, sharpen, noise, bulge/pinch, and many more artistic effects.
+			</p>
+		</div>
+
+		<div class="feature-card">
+			<h3 data-en="Drawing Tools" data-zh="绘图工具">Drawing Tools</h3>
+			<p data-en="Brush, pencil, eraser, and fill tools for freehand drawing and coloring. Adjust size and opacity." data-zh="画笔、铅笔、橡皮擦和填充工具，用于手绘和着色。可调整大小和不透明度。">
+				Brush, pencil, eraser, and fill tools for freehand drawing and coloring. Adjust size and opacity.
+			</p>
+		</div>
+
+		<div class="feature-card">
+			<h3 data-en="Text Tool" data-zh="文字工具">Text Tool</h3>
+			<p data-en="Add text to your images with customizable fonts, sizes, colors, and styles including bold and italic." data-zh="向图片添加文字，支持自定义字体、大小、颜色和样式，包括粗体和斜体。">
+				Add text to your images with customizable fonts, sizes, colors, and styles including bold and italic.
+			</p>
+		</div>
+
+		<div class="feature-card">
+			<h3 data-en="Transform" data-zh="变换">Transform</h3>
+			<p data-en="Resize, crop, rotate, and flip your images. Maintain aspect ratio or use custom dimensions." data-zh="调整大小、裁剪、旋转和翻转图片。保持纵横比或使用自定义尺寸。">
+				Resize, crop, rotate, and flip your images. Maintain aspect ratio or use custom dimensions.
+			</p>
+		</div>
+
+		<div class="feature-card">
+			<h3 data-en="Selection Tools" data-zh="选择工具">Selection Tools</h3>
+			<p data-en="Select rectangular or custom areas for editing. Copy, cut, paste, and modify selections." data-zh="选择矩形或自定义区域进行编辑。复制、剪切、粘贴和修改选区。">
+				Select rectangular or custom areas for editing. Copy, cut, paste, and modify selections.
+			</p>
+		</div>
+
+		<div class="feature-card">
+			<h3 data-en="Color Adjustments" data-zh="颜色调整">Color Adjustments</h3>
+			<p data-en="Brightness, contrast, saturation, hue, and desaturate tools for perfect color correction." data-zh="亮度、对比度、饱和度、色相和去饱和工具，实现完美的色彩校正。">
+				Brightness, contrast, saturation, hue, and desaturate tools for perfect color correction.
+			</p>
+		</div>
+
+		<div class="feature-card">
+			<h3 data-en="Clone & Heal" data-zh="克隆和修复">Clone & Heal</h3>
+			<p data-en="Clone stamp for copying parts of your image. Magic eraser for removing backgrounds." data-zh="克隆图章用于复制图片的某些部分。魔棒橡皮擦用于移除背景。">
+				Clone stamp for copying parts of your image. Magic eraser for removing backgrounds.
+			</p>
+		</div>
+	</div>
+
+	<script>
+		const lang = new URLSearchParams(window.location.search).get('lang') || 'en';
+		document.querySelectorAll('[data-' + lang + ']').forEach(el => {
+			el.innerHTML = el.getAttribute('data-' + lang);
+		});
+	</script>
+</body>
+</html>
