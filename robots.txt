@@ -1,5 +1,10 @@
 User-agent: *
 Allow: /
 Disallow: /dist/
+Disallow: /docs/
+
+# Block AI scrapers (optional, remove if you want indexed by them)
+# User-agent: GPTBot
+# Disallow: /
 
 Sitemap: https://ps.itzhouq.cn/sitemap.xml
